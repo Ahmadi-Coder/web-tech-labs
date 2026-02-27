@@ -14,4 +14,4 @@ The project is deployed using **GitHub Pages**:
 
 ## Author
 **Ahmad Noor**  
-BSCS Student, UET Peshawar  
+BSCS Student, UET Peshawar
