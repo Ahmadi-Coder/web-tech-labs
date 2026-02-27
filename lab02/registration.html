@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab_02 - Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background-color: #333;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Student Registration Form</h1>
+    <p>BSCS - 4th Semester | UET Peshawar</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">About</a></li>
+      <li><a href="schedule.html">Courses</a></li>
+      <li><a href="registration.html" class="active">Registration</a></li>
+      <li><a href="navigation.html">Navigation Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- Registration Form -->
+  <form action="#" method="post">
+    <!-- Name -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Registration Number -->
+    <label for="regno">Registration Number</label>
+    <input type="text" id="regno" name="regno" placeholder="e.g. BSCS-2026-123" required>
+
+    <!-- Email -->
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Choose a strong password" required>
+
+    <!-- Course Selection Dropdown -->
+    <label for="course">Select Course</label>
+    <select id="course" name="course" required>
+      <option value="">--Choose a Course--</option>
+      <option value="webtech">Web Technologies</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="os">Operating Systems</option>
+      <option value="datasci">Data Science</option>
+      <option value="cybersec">Cyber Security</option>
+    </select>
+
+    <!-- Semester Radio Buttons -->
+    <label>Semester</label>
+    <input type="radio" id="semester1" name="semester" value="1">
+    <label for="semester1">1st</label>
+    <input type="radio" id="semester2" name="semester" value="2">
+    <label for="semester2">2nd</label>
+    <input type="radio" id="semester3" name="semester" value="3">
+    <label for="semester3">3rd</label>
+    <input type="radio" id="semester4" name="semester" value="4">
+    <label for="semester4">4th</label>
+
+    <!-- Terms and Conditions Checkbox -->
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms and Conditions</label>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+
+  <!-- Back to Home -->
+  <section style="text-align:center; margin-top:20px;">
+    <p><a href="index.html">← Back to Home</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ahmad Noor | UET Peshawar</p>
+    <p><a href="https://www.uetpeshawar.edu.pk" target="_blank">UET Official Website</a></p>
+  </footer>
+
+</body>
+</html>

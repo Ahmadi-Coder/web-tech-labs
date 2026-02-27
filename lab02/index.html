@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ahmad Noor - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a.active {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+    nav a:hover {
+      background-color: #004080;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .labs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .labs a {
+      display: block;
+      padding: 15px;
+      background: #e6f0ff;
+      border-radius: 6px;
+      text-align: center;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .labs a:hover {
+      background: #cce0ff;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Ahmad Noor - Web Technologies Portfolio</h1>
+    <p>BSCS Student | UET Peshawar</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="profile.html">About</a></li>
+      <li><a href="schedule.html">Courses</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="navigation.html">Navigation Menu</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <section class="intro">
+    <h2>Welcome!</h2>
+    <p>
+      I am <strong>Ahmad Noor</strong>, a BSCS student at UET Peshawar.  
+      This portfolio showcases my Web Technologies lab exercises, including course schedules, navigation menus, and registration forms.  
+      Explore the links below to view each lab task.
+    </p>
+  </section>
+
+  <!-- Lab Exercises -->
+  <section>
+    <h2>Lab Exercises</h2>
+    <div class="labs">
+      <a href="profile.html">Profile Page</a>
+      <a href="schedule.html">Course Schedule</a>
+      <a href="registration.html">Registration Form</a>
+      <a href="navigation.html">Navigation Menu</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ahmad Noor | UET Peshawar</p>
+    <p>
+      <a href="https://github.com/Ahmadi-Coder" target="_blank">My GitHub Profile</a> |
+      <a href="https://www.uetpeshawar.edu.pk" target="_blank">UET Official Website</a>
+    </p>
+  </footer>
+
+</body>
+</html>
